@@ -24,13 +24,13 @@ const Portfolio = () => {
       id : 3 ,
       icon : tic ,
       color : "shadow-red-500" ,
-      link : "#"
+      link : "https://github.com/DawitMac/mini-graphics"
     },
     {
       id : 4 ,
       icon :  todo ,
       color : "shadow-blue-500" ,
-      link : "#"
+      link : "https://github.com/DawitMac/todo-list"
     },
    
   ]
