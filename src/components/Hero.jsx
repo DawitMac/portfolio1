@@ -1,5 +1,4 @@
 import React from 'react'
-// import dave1 from '../images/dave1.jpg'
 import dave2 from '../images/david.png'
 import github from '../images/github.png'
 import telegram from '../images/telegram.png'
@@ -79,7 +78,7 @@ const Hero = () => {
      <div className='absolute top-[35%] ml-0 flex flex-col items-start'>
       {
         data.map((item , index) => (
-          <a key={index} href={item.link} download={item.download} target='_tab' className={"flex items-center justify-between px-4 w-44 h-[64px] bg-[#2F4858] text-white ml-[-100px] hover:ml-[0px] duration-300 shadow-lg" + " " + item.style}>
+          <a key={index} href={item.link} download={item.download} target='_tab' rel="noreferrer" className={"flex items-center justify-between px-4 w-44 h-[64px] bg-[#2F4858] text-white ml-[-100px] hover:ml-[0px] duration-300 shadow-lg" + " " + item.style}>
             <p className='font-semibold font-mono text-md'>{item.name}</p>
             <img src={item.icon} alt='logo' className='h-12 w-12 p-2 bg-white rounded-full'/>
           </a>
@@ -93,13 +92,3 @@ const Hero = () => {
 
 export default Hero
 
-/* 
-
-As a full stack developer, I have the ability to create and manage every aspect of a web application,
- from the front-end user interface to the back-end server and database. With my skills in both client-side and 
- server-side technologies, I can develop and deploy dynamic, scalable, and responsive web applications that meet 
- the needs of businesses and users alike. 
-Whether it's building a beautiful and intuitive user interface or configuring a complex server infrastructure,
- I have the expertise to bring a project to life from start to finish.
-
-*/
