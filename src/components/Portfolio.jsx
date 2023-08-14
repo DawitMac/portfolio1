@@ -3,7 +3,6 @@ import tic from '../images/tic.jpg'
 import todo from '../images/todo.jpg'
 import dashboard from '../images/dashboard.jpg'
 import pharmacy from '../images/pharmcy.jpg'
-import Slide from 'react-reveal/Slide';
 
 
 const Portfolio = () => {
@@ -38,14 +37,11 @@ const Portfolio = () => {
     <div name="Portfolio">
       <div  className='md:h-screen max-w-screen-lg p-4 flex flex-col mx-auto'>
         <div className='flex flex-col items-start justify-center'>
-        <Slide right>
           <div className='flex flex-col items-center justify-center gap-4'>
               <h1 className='text-5xl font-semibold font-serif'>Portfolio</h1>
               <div className='flex items-center justify-center border-[3px] border-[#FF9909] w-24 mb-10'></div> 
           </div>
-            </Slide> 
         </div>
-        <Slide left>
         <div className=''>
         <div className='w-full grid md:grid-cols-2 py-8 px-12 md:px-0 gap-16 text-center'>
                 {
@@ -60,7 +56,6 @@ const Portfolio = () => {
                 }
               </div>
             </div>
-            </Slide>
       </div>
     </div>
   )

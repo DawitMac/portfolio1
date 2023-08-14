@@ -4,8 +4,6 @@ import github from '../images/github.png'
 import telegram from '../images/telegram.png'
 import gmail from '../images/gmail.png'
 import cv from '../images/curriculum-vitae.png'
-import Bounce from 'react-reveal/Bounce';
-import Rotate from 'react-reveal/Rotate';
 import {FiArrowRight} from 'react-icons/fi'
 import { Link } from 'react-scroll'
 
@@ -40,7 +38,6 @@ const Hero = () => {
     <div name="Home" className='md:h-screen'>
     <div  className='flex h-full items-center justify-center mb-8 pt-40 md:mt-0'>
       <div className='flex flex-col md:flex-row h-full max-w-screen-lg leading-8 font-serif items-center justify-center  gap-10'>
-      <Rotate bottom left>
         <div className='flex flex-col md:w-1/2 justify-center h-full min-w-fit'>
           <p className='text-xl font-semibold ml-2 text-[#FF9909]'>Hello</p>
           <span className='text-4xl sm:text-7xl font-bold'>
@@ -67,9 +64,8 @@ const Hero = () => {
               </Link>
          
       </div>
-      </Rotate>
       <div>
-      <Bounce top><img src={dave2} className='h-[600px] mx-auto w-auto md:w-full' /></Bounce>
+        <img src={dave2} className='h-[600px] mx-auto w-auto md:w-full' />
       </div>
       </div>
     

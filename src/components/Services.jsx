@@ -5,8 +5,6 @@ import css from '../images/css-3.png'
 import react from '../images/physics.png'
 import graphQL from '../images/GraphQL_Logo.svg.webp'
 import js from '../images/js.png'
-import Slide from 'react-reveal/Slide';
-import Roll from 'react-reveal/Roll';
 
 const Services = () => {
   const data = [
@@ -44,7 +42,6 @@ const Services = () => {
   return (
     <div name="Services" >
       <div  className='md:h-screen max-w-screen-lg p-4 flex flex-col mx-auto'>
-      <Slide left>
         <div className='flex flex-col items-start justify-center'>
           <div className='flex flex-col items-center justify-center gap-4'>
              <h1 className='text-5xl font-semibold font-serif'>Services</h1>
@@ -54,8 +51,6 @@ const Services = () => {
                 This are the technologies i have working with
               </p>
         </div>
-        </Slide>
-        <Roll bottom>
               <div className='w-full grid grid-cols-2 md:grid-cols-3 py-8 px-12 gap-16 text-center'>
                 {
                   data.map(({id , name , icon })=>(
@@ -67,7 +62,6 @@ const Services = () => {
                   ))
                 }
               </div>
-              </Roll>
       </div>
     </div>
   )
